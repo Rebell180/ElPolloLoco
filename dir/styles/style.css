@@ -1,0 +1,30 @@
+
+/* #region Header */
+
+header {
+    .head {
+        h1 {
+            
+        }
+    }
+}
+
+/* #endregion Header */
+
+
+/* #region Main */
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    #section-canvas {
+        .content {
+            #canvas-frame {
+                background-color: black;
+            }
+        }
+    }
+}
+
+/* #endregion Main */
