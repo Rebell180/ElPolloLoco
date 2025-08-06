@@ -5,9 +5,28 @@
  */
 export class ImageManager {
 
-    static BACKGROUND; // TODO
+    static BACKGROUND = {
+        AIR : [
+            './dir/assets/img/5_background/layers/air.png'
+        ],
+        LAYER_1 : [
+            './dir/assets/img/5_background/layers/1_first_layer/1.png',
+            './dir/assets/img/5_background/layers/1_first_layer/2.png'
+        ],
+        LAYER_2 : [
+            './dir/assets/img/5_background/layers/2_second_layer/1.png',
+            './dir/assets/img/5_background/layers/2_second_layer/2.png'
+        ],
+        LAYER_3 : [
+            './dir/assets/img/5_background/layers/3_third_layer/1.png',
+            './dir/assets/img/5_background/layers/3_third_layer/2.png'
+        ],
+    } 
 
-    static CLOUDS; // TODO 
+    static CLOUDS = [
+        './dir/assets/img/5_background/layers/4_clouds/1.png',
+        './dir/assets/img/5_background/layers/4_clouds/2.png'
+    ];  
 
     static CHARACTER = {
         IDLE : [
