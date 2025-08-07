@@ -10,10 +10,10 @@ export class Character extends CollidableObject {
     constructor() {
         super();
         this.loadImage({pPath: ImageManager.CHARACTER.IDLE[0]});
-        this.x = 100;
-        this.y = 100;
-        this.width = 100;
-        this.height = 100;
+        this.x = 80;
+        this.y = 180;
+        this.width = 120;
+        this.height = 250;
     }
 
 

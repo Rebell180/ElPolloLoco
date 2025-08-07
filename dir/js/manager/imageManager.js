@@ -9,18 +9,22 @@ export class ImageManager {
         AIR : [
             './dir/assets/img/5_background/layers/air.png'
         ],
+        AIR_WIDE : './dir/assets/img/5_background/layers/air.png',
         LAYER_1 : [
             './dir/assets/img/5_background/layers/1_first_layer/1.png',
             './dir/assets/img/5_background/layers/1_first_layer/2.png'
         ],
+        LAYER_1_WIDE : './dir/assets/img/5_background/layers/1_first_layer/full.png',
         LAYER_2 : [
             './dir/assets/img/5_background/layers/2_second_layer/1.png',
             './dir/assets/img/5_background/layers/2_second_layer/2.png'
         ],
+        LAYER_2_WIDE : './dir/assets/img/5_background/layers/2_second_layer/full.png',
         LAYER_3 : [
             './dir/assets/img/5_background/layers/3_third_layer/1.png',
             './dir/assets/img/5_background/layers/3_third_layer/2.png'
         ],
+        LAYER_3_WIDE : './dir/assets/img/5_background/layers/3_third_layer/full.png',
     } 
 
     static CLOUDS = [

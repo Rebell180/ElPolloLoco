@@ -7,8 +7,8 @@ export class Chicken extends EnemyObject {
         constructor() {
             super();
             this.loadImage({pPath: ImageManager.CHICKEN.WALK[0]});
-            this.y = 100;
-            this.width = 100;
-            this.height = 100;
+            this.y = 360;
+            this.width = 60;
+            this.height = 60;
         }
 }

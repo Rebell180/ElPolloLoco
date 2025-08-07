@@ -3,15 +3,15 @@ import { CollidableObject } from "../CollidableObject.js";
 
 export class EnemyObject extends CollidableObject {
 
-    static spawnX = 500;
+    static spawnEnemyX = 500;
     
     constructor() {
         super();
-        this.setSpawnX(); 
+        this.setSpawnEnemyX(); 
     }
 
-    setSpawnX(){
-        this.x = EnemyObject.spawnX;
-        EnemyObject.spawnX += Math.random() * 50 + 200;
+    setSpawnEnemyX(){
+        this.x = EnemyObject.spawnEnemyX;
+        EnemyObject.spawnEnemyX += Math.random() * 50 + 200;
     }
 }
