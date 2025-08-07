@@ -1,4 +1,4 @@
-import { CollidableObject } from "../../CollidableObjects/CollidableObject.js";
+import { CollidableObject } from "../CollidableObject.js";
 
 
 export class EnemyObject extends CollidableObject {

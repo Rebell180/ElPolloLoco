@@ -1,4 +1,4 @@
-import { MovableObject } from "../movableObjects/MovableObject.js";
+import { MovableObject } from "../MovableObject.js";
 
 
 
@@ -7,5 +7,9 @@ export class CollidableObject extends MovableObject {
 
     constructor() {
         super();
+    }
+
+    isColliding() {
+        
     }
 }

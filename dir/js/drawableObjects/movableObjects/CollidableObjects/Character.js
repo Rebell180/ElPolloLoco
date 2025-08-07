@@ -1,5 +1,6 @@
 // import { CollidableObject } from "CollidableObject.js";
-import { ImageManager } from "../../manager/imageManager.js";
+import { ImageManager } from "../../../manager/imageManager.js";
+import { CollidableObject } from "../CollidableObjects/CollidableObject.js"
 
 /**
  * 
