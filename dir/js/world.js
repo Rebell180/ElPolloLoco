@@ -55,15 +55,8 @@ export class World {
 
     draw() {
         this.clearCanvas();
-
-        
         this.drawImages();
-        
-
-        let self = this;
-        requestAnimationFrame(function() {
-            self.draw();
-        });
+        requestAnimationFrame(() => this.draw());
     }
 
     drawImages() {
