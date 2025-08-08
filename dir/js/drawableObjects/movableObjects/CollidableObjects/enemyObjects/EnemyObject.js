@@ -4,6 +4,7 @@ import { CollidableObject } from "../CollidableObject.js";
 export class EnemyObject extends CollidableObject {
 
     static spawnEnemyX = 500;
+    y = 360;
     
     constructor() {
         super();

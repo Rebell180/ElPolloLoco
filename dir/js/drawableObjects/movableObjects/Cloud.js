@@ -1,5 +1,5 @@
-import { ImageManager } from "../../manager/imageManager.js";
-import { IntervalManager } from "../../manager/intervalManager.js";
+import { ImgHub } from "../../manager/imgHub.js";
+import { IntervalHub } from "../../manager/intervalHub.js";
 import { MovableObject } from "./MovableObject.js";
 
 /**
@@ -7,25 +7,31 @@ import { MovableObject } from "./MovableObject.js";
  */
 export class Cloud extends MovableObject {
 
+    static spawnCloudX = 50;
+
     width = 350;
     height = 200;
-    y = (Math.random() * 50) + (Math.random() * 100);
-    static spawnCloudX = 50;
-    interval = 1000 / 15;
+    interval = 1000 / 60;
+    moveSpeed = 0.125
 
     constructor() {
-        super().loadImage({pPath: ImageManager.CLOUDS[1]});
+        super();
+        this.loadImage({pPath: ImgHub.CLOUDS[0]});
         this.setSpawnCloudX();
-        IntervalManager.startInterval({func: this.animate, timer: this.interval});
+        this.setRandomY();
+        IntervalHub.startInterval({func: this.animate, timer: this.interval});
     }
 
     setSpawnCloudX() {
         this.x = Cloud.spawnCloudX;
         Cloud.spawnCloudX += this.width;
+    }
 
+    setRandomY() {
+        this.y = (Math.random() * 50) + (Math.random() * 100);
     }
 
     animate = () => {
-        this.x -= 0.5;
+        this.x -= this.moveSpeed;
     }
 }

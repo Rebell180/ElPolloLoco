@@ -4,7 +4,7 @@
  * Every interval has to add here. 
  * They'll be killed after every round or level. 
  */
-export class IntervalManager {
+export class IntervalHub {
 
     // #region attributes
 
@@ -22,14 +22,14 @@ export class IntervalManager {
      */
     static startInterval({func, timer} = {}) {
         const newInterval = setInterval(func, timer);
-        IntervalManager.allIntervals.push(newInterval);
+        IntervalHub.allIntervals.push(newInterval);
     }
 
     /**
      * Stops all active intervals which created with this manager.
      */
     static stopAllIntervals() {
-        IntervalManager.allIntervals.forEach(clearInterval);
+        IntervalHub.allIntervals.forEach(clearInterval);
     }
 
     // #endregion methods

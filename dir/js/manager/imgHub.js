@@ -3,7 +3,7 @@
  * Manage all image sets for animations.
  * One single hub to hold an change images.
  */
-export class ImageManager {
+export class ImgHub {
 
     static BACKGROUND = {
         AIR : [

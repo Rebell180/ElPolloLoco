@@ -1,4 +1,4 @@
-import { ImageManager } from "../../manager/imageManager.js";
+import { ImgHub } from "../../manager/imgHub.js";
 import { Background } from "./Background.js";
 
 
@@ -10,6 +10,6 @@ export class BGLayer1 extends Background {
         this.y = 0;
         this.width = 1440;
         this.height = 480;
-        this.loadImage({pPath: ImageManager.BACKGROUND.LAYER_1_WIDE});
+        this.loadImage({pPath: ImgHub.BACKGROUND.LAYER_1_WIDE});
     }
 }
